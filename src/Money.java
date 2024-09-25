@@ -44,29 +44,27 @@ public class Money {
         return hryvnias + "," + String.format("%02d", kopecks); // Повертає рядок у форматі "гривні,копійки", де копійки завжди відображаються двозначним числом (наприклад, 05 замість 5)
     }
 
-    public static void main(String[] args) {  // Точка входу для виконання програми.
-        Money money1 = new Money(10, (byte) 50);  // Створення об'єкта Money 'money1' із 10 одиницями та 50 копійками.
-        Money money2 = new Money(5, (byte) 75);  // Створення об'єкта Money 'money2' із 5 одиницями та 75 копійками.
+    public static void main(String[] args) {  
+        Money money1 = new Money(10, (byte) 50);  
+        Money money2 = new Money(5, (byte) 75);  
     
-        System.out.println("Money1: " + money1);  // Виведення значення 'money1'. Метод toString() класу Money має обробляти форматування.
-        System.out.println("Money2: " + money2);  // Виведення значення 'money2'.
+        System.out.println("Money1: " + money1);  
+        System.out.println("Money2: " + money2);  
     // додавання
-        Money sum = money1.add(money2);  // Додавання 'money1' до 'money2', результат зберігається в 'sum'.
-        System.out.println("Сума: " + sum);  // Виведення суми 'money1' та 'money2'.
+        Money sum = money1.add(money2); 
+        System.out.println("Сума: " + sum); 
     // віднімання
-        Money diff = money1.subtract(money2);  // Віднімання 'money2' від 'money1', результат зберігається в 'diff'. 
-        System.out.println("Різниця: " + diff);  // Виведення різниці між 'money1' та 'money2'.
+        Money diff = money1.subtract(money2);   
+        System.out.println("Різниця: " + diff); 
     // ділення
-        Money divided = money1.divideByNumber(2);  // Ділення 'money1' на 2, результат зберігається в 'divided'.
-        System.out.println("Ділення на 2: " + divided);  // Виведення результату ділення 'money1' на 2.
+        Money divided = money1.divideByNumber(2);  
+        System.out.println("Ділення на 2: " + divided);  
     // порівняння
-        if (money1.equals(money2)) {  // Перевірка, чи рівні 'money1' і 'money2' за допомогою методу equals.
-            System.out.println("Суми рівні");  // Виведення повідомлення, що 'money1' і 'money2' рівні.
+        if (money1.equals(money2)) {  
+            System.out.println("Суми рівні");  
         } else {  
-            System.out.println("Суми не рівні");  // Виведення повідомлення, що 'money1' і 'money2' не рівні.
-        }
-    }
-    
+            System.out.println("Суми не рівні");  
         }
     }
 }
+        
