@@ -1,6 +1,6 @@
 public class Money {
-    long hryvnias; //Оголошуєм поле типу long (велике ціле число) з ім'ям hryvnias.
-    byte kopecks; //Оголошуєм поле типу byte (маленьке ціле число) з ім'ям kopeck.
+    long hryvnias; 
+    byte kopecks; 
 
     // Конструктор
     public Money(long hryvnias, byte kopecks) {
