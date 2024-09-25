@@ -41,7 +41,7 @@ public class Money {
 
     // Виведення
     public String toString() {
-        return hryvnias + "," + String.format("%02d", kopecks); // Повертає рядок у форматі "гривні,копійки", де копійки завжди відображаються двозначним числом (наприклад, 05 замість 5)
+        return hryvnias + "," + String.format("%02d", kopecks);
     }
 
     public static void main(String[] args) {  
