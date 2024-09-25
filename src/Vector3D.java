@@ -44,17 +44,17 @@ public class Vector3D {
         System.out.println("v1: (" + v1.x + ", " + v1.y + ", " + v1.z + ")");
         System.out.println("v2: (" + v2.x + ", " + v2.y + ", " + v2.z + ")");
 
-        System.out.println("Модуль v1: " + v1.magnitude());
+        System.out.println("Модуль v1: " + v1.magnitude()); //Обчислює модуль вектора або довжину вектора в тривимірному просторі.
 
-        Vector3D v3 = v1.multiplyByScalar(2);
+        Vector3D v3 = v1.multiplyByScalar(2); //Вектор v1 множиться на скаляр 2, і результат виводиться.
         System.out.println("v1 * 2: (" + v3.x + ", " + v3.y + ", " + v3.z + ")");
 
-        Vector3D v4 = v1.add(v2);
+        Vector3D v4 = v1.add(v2); //Обчислюється сума векторів v1 і v2, і результат виводиться.
         System.out.println("v1 + v2: (" + v4.x + ", " + v4.y + ", " + v4.z + ")");
 
-        System.out.println("Скалярний добуток v1 i v2: " + v1.dotProduct(v2));
+        System.out.println("Скалярний добуток v1 i v2: " + v1.dotProduct(v2)); //обчислює скалярний добуток двох векторів
 
-        Vector3D v5 = v1.crossProduct(v2);
+        Vector3D v5 = v1.crossProduct(v2); //Обчислюється векторний добуток двох векторів і результат виводиться.
         System.out.println("Векторний добуток v1 i v2: (" + v5.x + ", " + v5.y + ", " + v5.z + ")");
     }
 }

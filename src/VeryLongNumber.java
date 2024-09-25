@@ -32,7 +32,7 @@ public class VeryLongNumber {
         // Піднесення в степінь
         System.out.print("Введiть степiнь: ");
         int exponent = scanner.nextInt();
-        BigInteger power = num1.pow(exponent);
+        BigInteger power = num1.pow(exponent); // pow використовується для піднесення числа до степеня.
         System.out.println("Пiднесення до степеня: " + power);
     }
 }
